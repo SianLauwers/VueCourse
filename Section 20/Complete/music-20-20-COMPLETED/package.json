@@ -20,14 +20,15 @@
     "howler": "^2.2.1",
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
-    "postcss": "^7",
+    "postcss": "8.4.31",
     "register-service-worker": "^1.7.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vee-validate": "^4.1.18",
     "vue": "^3.0.0",
     "vue-i18n": "^9.0.0-rc.2",
     "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0"
+    "vuex": "^4.0.0-0",
+    "yarn": "^1.22.21"
   },
   "devDependencies": {
     "@intlify/vue-i18n-loader": "^2.0.0-beta.4",
