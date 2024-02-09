@@ -29,7 +29,7 @@ export default defineConfig({
         globPatterns: ["**/*.{js,css,html,png,jpg,}"],
       }
     }),
-    // visualizer({ open: true }),
+    visualizer({ open: true }),
   ],
   resolve: {
     alias: {
