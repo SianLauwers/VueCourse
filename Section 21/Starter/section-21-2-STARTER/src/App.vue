@@ -1,12 +1,23 @@
 <template>
   <div id="app">
-    <div class="scrollPosition"></div>
+    <div class="scrollPosition">{{ offset }}</div>
   </div>
 </template>
 
 <script>
+import mixin from '@/mixin';
+
 export default {
   name: 'App',
+  mixins: [mixin],
+  data() {
+    return {
+      offset: 0,
+    }
+  },
+  mounted() {
+    console.log('App mounted lifecycle function');
+  }
 };
 </script>
 
