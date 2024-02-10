@@ -5,13 +5,9 @@
         <div class="card-header">Emoji Selector</div>
         <div class="card-body">
           <form @submit.prevent="submit">
-            <div class="form-group">
-              <div class="input-group">
-                <input type="text" class="form-control" readonly>
-                <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button">Button</button>
-                </div>
-              </div>
+            <div class="mb-2">
+              <EmojiInput v-model="emoji"
+              :options="{ position: 'bottom' }"/>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -22,22 +18,24 @@
 </template>
 
 <script>
+import EmojiInput from "@/components/EmojiInput.vue";
+
 export default {
-  name: 'App',
-  data () {
+  name: "App",
+  components: {
+    EmojiInput
+  },
+  data() {
     return {
-      emoji: '',
-    }
+      emoji: "",
+    };
   },
   methods: {
-    submit () {
-      console.log(
-        'Emoji: ',
-        this.emoji
-      );
-    }
-  }
-}
+    submit() {
+      console.log("Emoji: ", this.emoji);
+    },
+  },
+};
 </script>
 
-<style src="bootstrap/dist/css/bootstrap.css">
+<style src="bootstrap/dist/css/bootstrap.css"></style>
